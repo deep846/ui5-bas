@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="smartcontrol.controller.form"
+    xmlns:smartField="sap.ui.comp.smartfield"
+    xmlns:smartform="sap.ui.comp.smartform">
+    <Page id="idDetailsPage" title="{i18n>DetailsPageTitle}"  showNavButton="true" navButtonPress="onNavButtonPress">
+        <smartform:SmartForm id="idSmartForm" title="{i18n>SmartFormTitle}">
+            <smartform:Group id="idGroup" title="{i18n>SmartFormGroupTitle}">
+                <smartform:GroupElement id="idCustomerIDGroupElement">
+                    <smartField:SmartField id="idCustomerIDSmartField" textLabel="Product ID" value="{ProductID}"></smartField:SmartField>
+                </smartform:GroupElement>
+                <smartform:GroupElement id="idCompanyNameGroupElement">
+                    <smartField:SmartField id="idCompanyNameSmartField" textLabel="Product Name" value="{ProductName}"></smartField:SmartField>
+                </smartform:GroupElement>
+                <smartform:GroupElement id="idContactNameGroupElement">
+                    <smartField:SmartField id="idContactNameSmartField" textLabel="Supplier ID" value="{SupplierID}"></smartField:SmartField>
+                </smartform:GroupElement>
+                <smartform:GroupElement id="idContactTitleGroupElement">
+                    <smartField:SmartField id="idContactTitleSmartField" textLabel="Catagory ID" value="{CategoryID}"></smartField:SmartField>
+                </smartform:GroupElement>
+            </smartform:Group>
+        </smartform:SmartForm>
+    </Page>
+</mvc:View>
+ 

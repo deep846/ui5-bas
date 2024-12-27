@@ -1,0 +1,106 @@
+{
+    
+      "MiningData": [
+        {
+          "LocationId": "LOC001",
+          "LocationDescr": "North Mining Area",
+          "MiningResources": "Iron Ore, Coal",
+          "TotalCost": 3500000,
+          "PossibleMinerals": "Gold, Silver, Copper",
+          "TotalDrill": 120,
+          "Mandays": 500
+        },
+        {
+          "LocationId": "LOC002",
+          "LocationDescr": "South Mining Area",
+          "MiningResources": "Gold, Copper",
+          "TotalCost": 5500000,
+          "PossibleMinerals": "Silver, Zinc",
+          "TotalDrill": 150,
+          "Mandays": 650,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC003",
+          "LocationDescr": "East Mining Area",
+          "MiningResources": "Copper, Silver",
+          "TotalCost": 4700000,
+          "PossibleMinerals": "Iron, Tin",
+          "TotalDrill": 80,
+          "Mandays": 400,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC004",
+          "LocationDescr": "West Mining Area",
+          "MiningResources": "Coal, Nickel",
+          "TotalCost": 6200000,
+          "PossibleMinerals": "Lead, Zinc",
+          "TotalDrill": 200,
+          "Mandays": 800,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC005",
+          "LocationDescr": "Central Mining Area",
+          "MiningResources": "Gold, Tin",
+          "TotalCost": 3900000,
+          "PossibleMinerals": "Silver, Platinum",
+          "TotalDrill": 95,
+          "Mandays": 450,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC006",
+          "LocationDescr": "Mountainous Region",
+          "MiningResources": "Copper, Zinc",
+          "TotalCost": 4600000,
+          "PossibleMinerals": "Iron, Cobalt",
+          "TotalDrill": 110,
+          "Mandays": 500,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC007",
+          "LocationDescr": "Desert Mining Zone",
+          "MiningResources": "Gold, Coal",
+          "TotalCost": 5300000,
+          "PossibleMinerals": "Iron, Lead",
+          "TotalDrill": 130,
+          "Mandays": 550,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC008",
+          "LocationDescr": "Tundra Exploration Site",
+          "MiningResources": "Silver, Coal",
+          "TotalCost": 4900000,
+          "PossibleMinerals": "Nickel, Copper",
+          "TotalDrill": 75,
+          "Mandays": 380,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC009",
+          "LocationDescr": "Deep Sea Mining Site",
+          "MiningResources": "Rare Earth Elements, Gold",
+          "TotalCost": 7500000,
+          "PossibleMinerals": "Platinum, Lithium",
+          "TotalDrill": 300,
+          "Mandays": 1000,
+          "imagePath": "./images/coal.jpg"
+        },
+        {
+          "LocationId": "LOC010",
+          "LocationDescr": "Forest Mining Area",
+          "MiningResources": "Iron Ore, Silver",
+          "TotalCost": 4800000,
+          "PossibleMinerals": "Lead, Copper",
+          "TotalDrill": 140,
+          "Mandays": 600,
+          "imagePath": "./images/coal.jpg"
+        }
+      ]
+    
+  }
+  

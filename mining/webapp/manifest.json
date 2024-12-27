@@ -1,0 +1,120 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "mining",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.15.7",
+      "toolsId": "4dd635ef-db0a-4b32-8155-db5e33ec45a4"
+    },
+    "dataSources": {
+      "MiningData":{
+        "type": "JSON",
+        "uri": "./model/mining.json"
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.131.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "mining.i18n.i18n"
+        }
+      },
+      "Mining":{
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "MiningData"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ],
+      "images" : [
+        {
+          "uri": "/images/"
+        }
+      ]
+      
+    },
+   
+  
+    
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "mining.view",
+        "async": true,
+        "viewPath": "mining.view"
+      },
+      "routes": [
+        {
+          "name": "Routewelcome",
+          "pattern": ":?query:",
+          "target": [
+            "Targetwelcome"
+          ]
+        }
+      ],
+      "targets": {
+        "Targetwelcome": {
+          "id": "welcome",
+          "name": "welcome"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "mining.view.App",
+      "type": "XML",
+      "id": "App"
+    }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "mining"
+  }
+}

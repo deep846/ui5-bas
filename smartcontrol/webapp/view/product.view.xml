@@ -1,0 +1,41 @@
+<mvc:View controllerName="smartcontrol.controller.product"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+    >
+    <Page title="{i18n>title}">
+
+
+            <smartFilterBar:SmartFilterBar 
+		id="smartFilterBar"
+		entitySet="Products">
+		<smartFilterBar:controlConfiguration>
+			<smartFilterBar:ControlConfiguration
+				key="CategoryID" visibleInAdvancedArea="true"
+				preventInitialDataFetchInValueHelpDialog="false">
+			</smartFilterBar:ControlConfiguration>
+		</smartFilterBar:controlConfiguration>
+	</smartFilterBar:SmartFilterBar>
+
+	<smartTable:SmartTable 
+		id="smartTable_ResponsiveTable"
+		smartFilterId="smartFilterBar" 
+		tableType="ResponsiveTable" 
+		editable="false"
+		entitySet="Products" 
+		useVariantManagement="true"
+		useTablePersonalisation="true" 
+		header="Products" 
+		showRowCount="true"
+        editToggled="true"
+		enableExport="true" 
+		enableAutoBinding="true"
+        enableAutoColumnWidth="true"
+        editTogglable="true"
+        initiallyVisibleFields="ProductID,ProductName,SupplierID,CategoryID"
+        >
+        <Table selectionChange="onselect" mode="SingleSelectMaster"></Table>
+	</smartTable:SmartTable>
+    </Page>
+</mvc:View>

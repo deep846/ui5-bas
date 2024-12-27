@@ -1,0 +1,66 @@
+<mvc:View controllerName="mining.controller.detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:ui="sap.ui.table"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+
+<Page id="page2" title="{i18n>title2}">
+    <VBox id="sm" class="sapUiSmallMargin">
+        <f:SimpleForm id="SimpleFormChange354"
+            editable="true"
+            layout="ResponsiveGridLayout"
+            title="More Details"
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="4"
+            emptySpanL="4"
+            emptySpanM="4"
+            emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false" >
+            
+            <!-- Using HBox to split data and image horizontally -->
+            <f:content>
+                <HBox>
+                    <!-- Left side - Form with data -->
+                    <VBox>
+                        <Label id="a1" text="Location id" />
+                        <Text id="name" text="{mining>/loc}" />
+                        
+                        <Label id="a2" text="Location Name" />
+                        <Text id="name2" text="{mining>/desc}"/>
+
+                        <Label id="a3" text="Mineral Found" />
+                        <Text id="name3" text="{mining>/res}"/>
+
+                        <Label id="a4" text="Total Cost" />
+                        <Text id="name4" text="{mining>/tc}"/>
+
+                        <Label id="a5" text="Total Drill" />
+                        <Text id="name6" text="{mining>/td}"/>
+
+                        <Label id="a6" text="Possible Mineral" />
+                        <Text id="name7" text="{mining>/pm}"/>
+
+                        <Button text="Get Cost" id="btnGetCost" press="onPress"></Button>
+                    </VBox>
+                    
+                    <!-- Right side - Image -->
+                    <VBox>
+                        <Label id="imgLabel" text="Location Image" />
+                        <Image id="locationImage" src="{mining>imagePath}" width="200px" height="150px" alt="Location Image"/>
+                    </VBox>
+                </HBox>
+            </f:content>
+
+        </f:SimpleForm>
+    </VBox>
+</Page>
+
+</mvc:View>

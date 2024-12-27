@@ -1,0 +1,72 @@
+<mvc:View xmlns:vk="sap.ui.vk" 
+    controllerName="mining.controller.welcome"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:ui="sap.ui.table"
+    xmlns:core="sap.ui.core">
+
+    <Page id="page" title="Mining portal">
+        <Bar id="searchBar">
+            <contentMiddle>
+                <SearchField id="searchField" placeholder="Search by Location Id or Description" 
+                    liveChange="onSearch" width="auto" search="onFilterPosts"/>
+            </contentMiddle>
+        </Bar>
+
+        <content>
+            <!-- Table displaying mining data -->
+            <ui:Table id="uiTable" rows="{mining>/MiningData}" selectionMode="Single" rowSelectionChange="onSelect">
+                <ui:columns>
+                    <ui:Column id="c1">
+                        <Label id="l1" text="Location Id" />
+                        <ui:template>
+                            <Text id="t1" text="{mining>LocationId}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c2">
+                        <Label id="l2" text="Location Description" />
+                        <ui:template>
+                            <Text id="t2" text="{mining>LocationDescr}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c3">
+                        <Label id="l3" text="Mining Resources" />
+                        <ui:template>
+                            <Text id="t3" text="{mining>MiningResources}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c4">
+                        <Label id="l4" text="Total Cost" />
+                        <ui:template>
+                            <Text id="t4" text="{mining>TotalCost}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c5">
+                        <Label id="l5" text="Possible Minerals" />
+                        <ui:template>
+                            <Text id="t5" text="{mining>PossibleMinerals}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c6">
+                        <Label id="l6" text="Total Drills" />
+                        <ui:template>
+                            <Text id="t6" text="{mining>TotalDrill}" />
+                        </ui:template>
+                    </ui:Column>
+
+                    <ui:Column id="c7">
+                        <Label id="l7" text="Image" />
+                        <ui:template>
+                            <Image id="t7" src="{mining>imagePath}" height="20px" width="20px" />
+                        </ui:template>
+                    </ui:Column>
+                </ui:columns>
+            </ui:Table>
+        </content>
+    </Page>
+</mvc:View>
